@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader Mode Toggle - Pratinjau Mode Baca Nyaman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Panel Kontrol Pembaca (Reader Toolbar) -->
+        <header class="reader-toolbar">
+            <div class="toolbar-section">
+                <label for="fontSelect">Jenis Font:</label>
+                <select id="fontSelect">
+                    <option value="'Segoe UI', sans-serif">Sans-serif (Modern)</option>
+                    <option value="'Georgia', serif">Serif (Klasik/Buku)</option>
+                    <option value="'Courier New', monospace">Monospace (Ketik)</option>
+                </select>
+            </div>
+
+            <div class="toolbar-section">
+                <label>Ukuran Teks:</label>
+                <button id="btnDecrease" class="btn-tool" title="Kecilkan Teks">A-</button>
+                <span id="fontSizeDisplay">18px</span>
+                <button id="btnIncrease" class="btn-tool" title="Besarkan Teks">A+</button>
+            </div>
+
+            <div class="toolbar-section">
+                <label for="lineHeightSelect">Jarak Baris:</label>
+                <select id="lineHeightSelect">
+                    <option value="1.4">Rapat (1.4)</option>
+                    <option value="1.8" selected>Normal (1.8)</option>
+                    <option value="2.2">Renggang (2.2)</option>
+                </select>
+            </div>
+
+            <div class="toolbar-section">
+                <label>Tema Warna:</label>
+                <div class="theme-buttons">
+                    <button class="btn-theme light active" data-theme="theme-light" title="Mode Terang"></button>
+                    <button class="btn-theme sepia" data-theme="theme-sepia" title="Mode Sepia"></button>
+                    <button class="btn-theme dark" data-theme="theme-dark" title="Mode Gelap"></button>
+                </div>
+            </div>
+
+            <button id="btnReset" class="btn-reset">Reset Pengaturan</button>
+        </header>
+
+        <!-- Area Artikel Utama -->
+        <main class="article-card theme-light" id="articleContent">
+            <span class="category">Edukasi & Teknologi</span>
+            <h1 class="article-title">Memahami Pentingnya Desain UI/UX dalam Pengembangan Aplikasi Web</h1>
+            <p class="article-meta">Diterbitkan pada 8 Agustus 2026 • Estimasi baca: 3 menit</p>
+            
+            <hr class="divider">
+
+            <div class="article-body">
+                <p>
+                    User Interface (UI) dan User Experience (UX) adalah dua elemen krusial dalam pembuatan produk digital modern. Meskipun sering disebut bersamaan, keduanya memiliki fokus dan tujuan yang berbeda namun saling melengkapi dalam memberikan kenyamanan bagi pengguna.
+                </p>
+                
+                <h2>Apa Itu User Experience (UX)?</h2>
+                <p>
+                    UX berfokus pada keseluruhan alur dan rasa yang dialami oleh pengguna saat menggunakan sebuah aplikasi. Pengalaman pengguna yang baik tercipta ketika aplikasi mudah digunakan, responsif, intuitif, serta menyelesaikan masalah pengguna tanpa hambatan yang membingungkan.
+                </p>
+
+                <h2>Apa Itu User Interface (UI)?</h2>
+                <p>
+                    Sementara itu, UI berfokus pada elemen visual interaktif dari aplikasi. Elemen ini mencakup pemilihan tata letak, skema warna, tipografi, bentuk tombol, hingga animasi transisi. UI yang menarik secara visual dapat meningkatkan daya tarik awal produk digital.
+                </p>
+
+                <p>
+                    Dengan menerapkan fitur <em>Reader Mode</em> seperti ini pada situs web berita atau blog, pembaca dapat menyesuaikan tampilan teks sesuai preferensi kenyamanan mata mereka, terutama saat membaca artikel yang panjang.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
